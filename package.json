@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "Read content from webpack memory",
   "eggPlugin": {
-    "name": "memoryfs"
+    "name": "memoryfs",
+    "dep": [
+      "nunjucks"
+    ]
   },
   "keywords": [
     "egg",
     "eggPlugin",
     "egg-plugin",
     "memoryfs",
+    "nunjucks",
+    "egg-view-nunjucks",
     "egg-view-memoryfs"
   ],
   "dependencies": {},
