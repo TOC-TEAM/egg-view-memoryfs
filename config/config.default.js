@@ -1,8 +1,11 @@
 'use strict'
-
+const path = require('path')
 /**
- * egg-view-html default config
- * @member Config#viewHtml
+ * egg-view-memoryfs default config
+ * @member Config#memoryfs
  * @property {String} SOME_KEY - some description
  */
-exports.memoryfs = {}
+exports.memoryfs = {
+  buildPath: path.join(process.cwd(), 'app/view'),
+  defaultExtension: '.html'
+}
